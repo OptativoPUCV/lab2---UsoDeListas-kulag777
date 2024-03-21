@@ -401,3 +401,13 @@ exercises.c:151:10: error: ‘pila’ is a pointer; did you mean to use ‘->’
       |          ->
 Compilation failed
 ad37358
+Thu 21 Mar 2024 09:05:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:151:6: error: expected expression before ‘int’
+  151 |   if(int i = get_size(pila) != 0)
+      |      ^~~
+Compilation failed
+2e63585
