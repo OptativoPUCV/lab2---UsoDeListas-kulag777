@@ -422,3 +422,14 @@ Thu 21 Mar 2024 09:12:40 PM UTC:
  tests:  8|1
 total_score: 60/70
 dd6607c
+Thu 21 Mar 2024 09:15:54 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:7: error: ‘dato’ may be used uninitialized [-Werror=maybe-uninitialized]
+  102 |       push(aux, dato);
+      |       ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ab862d3
