@@ -81,3 +81,23 @@ Thu 21 Mar 2024 08:40:41 PM UTC:
  tests:  3|2
 total_score: 40/70
 691d05b
+Thu 21 Mar 2024 08:46:31 PM UTC: 
+ exercises.c | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:26: error: comparison between pointer and integer [-Werror]
+  132 |             if(pop(pila) != '(')
+      |                          ^~
+exercises.c:137:26: error: comparison between pointer and integer [-Werror]
+  137 |             if(pop(pila) != '[')
+      |                          ^~
+exercises.c:142:26: error: comparison between pointer and integer [-Werror]
+  142 |             if(pop(pila) != '{')
+      |                          ^~
+exercises.c:148:10: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  148 |   if(pila->size != 0)
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+56f9040
