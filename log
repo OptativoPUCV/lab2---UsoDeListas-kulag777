@@ -350,3 +350,23 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 cd79c46
+Thu 21 Mar 2024 09:00:42 PM UTC: 
+ exercises.c | 27 ++++++++-------------------
+ 1 file changed, 8 insertions(+), 19 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:26: error: comparison between pointer and integer [-Werror]
+  132 |             if(pop(pila) != '(')
+      |                          ^~
+exercises.c:137:26: error: comparison between pointer and integer [-Werror]
+  137 |             if(pop(pila) != '[')
+      |                          ^~
+exercises.c:142:26: error: comparison between pointer and integer [-Werror]
+  142 |             if(pop(pila) != '{')
+      |                          ^~
+exercises.c:148:10: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  148 |   if(pila->size != 0)
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+82975a3

@@ -125,36 +125,25 @@ int parentesisBalanceados(char *cadena) {
       }
       else
       {
-        if(cadena[i] == ')')
+        if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
         {
-          pop(pila);
-          if(top(pila)== '(')
+          if(cadena[i] == ')')
           {
-            pop(pila);
+            if(pop(pila) != '(')
+              return 0;            
           }
-        }
-        else
-        {
           if(cadena[i] == ']')
           {
-            pop(pila);
-            if(top(pila)== '[')
-            {
-              pop(pila);
-            }
+            if(pop(pila) != '[')
+              return 0;
           }
-          else
+          if(cadena[i] == '}')
           {
-            if(cadena[i] == '}')
-            {
-              pop(pila);
-              if(top(pila)== '{')
-              {
-                pop(pila);
-              }
-            }
+            if(pop(pila) != '{')
+              return 0;
           }
-        }        
+        }
+      }
     }
   if(pila->size != 0)
     return 0;
