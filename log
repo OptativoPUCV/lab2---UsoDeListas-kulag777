@@ -63,3 +63,15 @@ Thu 21 Mar 2024 08:38:30 PM UTC:
  tests:  3|2
 total_score: 40/70
 02360d6
+Thu 21 Mar 2024 08:40:20 PM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:21: error: ‘P3’ undeclared (first use in this function); did you mean ‘P2’?
+  105 |   while((dato = pop(P3)) != NULL)
+      |                     ^~
+      |                     P2
+exercises.c:105:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7555ab7
