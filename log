@@ -453,3 +453,23 @@ exercises.c:106:9: error: suggest parentheses around assignment used as truth va
 cc1: all warnings being treated as errors
 Compilation failed
 18ed200
+Sat 23 Mar 2024 02:55:22 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:14: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  100 |   while(dato = top(P1) != NULL)
+      |              ^
+exercises.c:100:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  100 |   while(dato = top(P1) != NULL)
+      |         ^~~~
+exercises.c:105:14: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  105 |   while(dato = top(aux) != NULL)
+      |              ^
+exercises.c:105:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  105 |   while(dato = top(aux) != NULL)
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+33081fc
